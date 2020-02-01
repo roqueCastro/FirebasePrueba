@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nom =(EditText) findViewById(R.id.input_nombre);
-        ape =(EditText) findViewById(R.id.input_apellidos);
-        cor =(EditText) findViewById(R.id.input_correo);
-        pass =(EditText) findViewById(R.id.input_pass);
+        nom = findViewById(R.id.input_nombre);
+        ape = findViewById(R.id.input_apellidos);
+        cor = findViewById(R.id.input_correo);
+        pass = findViewById(R.id.input_pass);
 
         inicializarFirebaseServices();
     }
@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
         nom.setText("");
         ape.setText("");
         cor.setText("");
-        pass.setText("");
+        pass.setText("");//
+        //
     }
 
     private void validacion(String nombre, String apellidos, String correo, String password) {
