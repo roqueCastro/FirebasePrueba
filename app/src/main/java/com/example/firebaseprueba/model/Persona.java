@@ -52,7 +52,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return Nombre;
+        return Nombre + Apellidos + Correo + Password;
     }
 }
 
